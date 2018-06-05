@@ -18,7 +18,9 @@ namespace UnityGLTF
 			var s = Shader.Find(shaderName);
 			if (s == null)
 			{
-				throw new ShaderNotFoundException(shaderName + " not found. Did you forget to add it to the build?");
+				Debug.LogError(shaderName + " not found. Did you forget to add it to the build?"); // throw new ShaderNotFoundException(shaderName + " not found. Did you forget to add it to the build?");
+				_material = new Material(Shader.Find("Standard"));
+				return;
 			}
 
 			s.maximumLOD = MaxLOD;
