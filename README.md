@@ -18,15 +18,16 @@ Work Items and Issues targeting a 1.0 release of the library can be found in
 [Road to 1.0](https://github.com/KhronosGroup/UnityGLTF/projects/1)
 
 ## Building
-1. Open the Unity project located in `UnityGLTF\`
-2. Check `UnityGLTF\Assets\UnityGLTF\Plugins` settings:
-  - `JsonNet.../Newtownsoft.Json.dll` binary should be configured for everything but UWP.
-  - `JsonNet.../Portable/Newtownsoft.Json.dll` binary should be configured for **UWP** only.
+1. Add [JSON.NET for Unity](https://github.com/SaladLab/Json.Net.Unity3D/releases/download/8.0.3/JsonNet-UwpWorkaround.8.0.3.zip) to 'Plugins' folder
+2. Open the Unity project located in `UnityGLTF` folders
+3. Check `UnityGLTF/Assets/UnityGLTF/Plugins` DLL settings:
+    - `JsonNet.../Newtownsoft.Json.dll` binary should be configured for everything but UWP.
+    - `JsonNet.../Portable/Newtownsoft.Json.dll` binary should be configured for **UWP** only.
 
 ## Localhost server
 To get assets do a **recursive** git clone.
 
-`git clone https://github.com/deadlyfingers/UnityGLTF --recursive`
+`git clone https://github.com/KhronosGroup/UnityGLTF --recursive`
 
 Or if you've already done a git clone then use:
 
